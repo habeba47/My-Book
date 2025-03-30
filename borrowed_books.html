@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Search</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="search.html" class="active" aria-current="page">Search</a>
+    <a href="borrowed_books.html">My Books</a>
+    <a href="login.html">Logout</a>
+  </nav>
+
+  <main>
+    <section class="search-section">
+      <h2>Search the My Library</h2>
+
+      <form class="search-form" method="GET" action="search_results.html">
+        <label for="title">Title:</label>
+        <input id="title" name="title" type="text" placeholder="Enter book title" />
+
+        <label for="author">Author:</label>
+        <input id="author" name="author" type="text" placeholder="Author or category" />
+
+        <label for="category">Category:</label>
+        <input id="category" name="category" type="text" placeholder="Enter book category" />
+
+        <button type="submit" aria-label="Search books"><i class="fa fa-search"></i> Search</button>
+      </form>
+
+      <p class="search-label"><em>Showing results for: "Harry"</em></p>
+    </section>
+
+    <section class="search-results">
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> Harry Potter and the Sorcerer's Stone</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> Harry Potter and the Chamber of Secrets</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Borrowed</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> Harry Potter and the Prisoner of Azkaban</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> Harry Potter and the Goblet of Fire</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> The Great Gatsby</h3>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Category: Classic</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> 1984</h3>
+        <p>Author: George Orwell</p>
+        <p>Category: Dystopian</p>
+        <p>Status: Borrowed</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> To Kill a Mockingbird</h3>
+        <p>Author: Harper Lee</p>
+        <p>Category: Classic</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> The Hobbit</h3>
+        <p>Author: J.R.R. Tolkien</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> The Catcher in the Rye</h3>
+        <p>Author: J.D. Salinger</p>
+        <p>Category: Classic</p>
+        <p>Status: Borrowed</p>
+      </article>
+
+      <article class="book-card">
+        <h3><i class="fa-solid fa-book-open"></i> Brave New World</h3>
+        <p>Author: Aldous Huxley</p>
+        <p>Category: Dystopian</p>
+        <p>Status: Available</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

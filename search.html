@@ -1,0 +1,156 @@
+<!-- search.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Books</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar Placeholder -->
+  <div class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="search.html" class="active">Search</a>
+    <a href="borrowed_books.html">My Books</a>
+    <a href="login.html">Logout</a>
+  </div>
+
+  <main class="container">
+    <h1>Search for Books</h1>
+    <section class="search-section">
+        <h2>Search the Library</h2>
+    
+        <form class="search-form" method="GET" action="search_results.html">
+            <label for="title">Title:</label>
+            <input id="title" name="title" type="text" placeholder="Enter book title" />
+          
+            <label for="author">Author:</label>
+            <input id="author" name="author" type="text" placeholder="Author or category" />
+          
+            <label for="category">Category:</label>
+            <input id="category" name="category" type="text" placeholder="Enter book category" />
+          
+            <button type="submit" aria-label="Search books"><i class="fa fa-search"></i> Search</button>
+          </form>
+    
+        <p class="search-label"><em>Showing results for: "Harry"</em></p><!--for JS-->
+      </section>
+
+    
+    <div class="book-list">
+      <div class="book-card available">
+        <h2><i class="fa-solid fa-bookmark"></i>Harry Potter and the Goblet of Fire</h2>
+        <p><strong>Author:</strong> J.K. Rowling</p>
+        <p><strong>Category:</strong> Fantasy</p>
+        <p class="status">Status: Available</p>
+      </div>
+
+      <div class="book-card unavailable">
+        <h2><i class="fa-solid fa-bookmark"></i>Harry Potter and the Chamber of Secrets</h2>
+        <p><strong>Author:</strong> J.K. Rowling</p>
+        <p><strong>Category:</strong> Fantasy</p>
+        <p class="status">Status: Borrowed</p>
+      </div>
+
+      <div class="book-card unavailable">
+        <h2><i class="fa-solid fa-bookmark"></i>Harry Potter and the Sorcerer's Stone</h2>
+        <p><strong>Author:</strong> J.K. Rowling</p>
+        <p><strong>Category:</strong> Fantasy</p>
+        <p class="status">Status: Borrowed</p>
+      </div>
+
+      <div class="book-card unavailable">
+        <h2><i class="fa-solid fa-bookmark"></i>The Subtle Art of Not Giving a F*ck</h2>
+        <p><strong>Author:</strong> Mark Manson</p>
+        <p><strong>Category:</strong> Self-help</p>
+        <p class="status">Status: Borrowed</p>
+      </div>
+
+      <div class="book-card available">
+        <h2><i class="fa-solid fa-bookmark"></i>Introduction to Algorithms</h2>
+        <p><strong>Author:</strong> Cormen et al.</p>
+        <p><strong>Category:</strong> Computer Science</p>
+        <p class="status">Status: Available</p>
+      </div>
+
+      <div class="book-card unavailable">
+        <h3><i class="fa-solid fa-bookmark"></i>Harry Potter and the Sorcerer's Stone</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card available">
+        <h3><i class="fa-solid fa-bookmark"></i>Harry Potter and the Chamber of Secrets</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Borrowed</p>
+      </div>
+      <div class="book-card unavailable">
+        <h3><i class="fa-solid fa-bookmark"></i>Harry Potter and the Prisoner of Azkaban</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card available">
+        <h3><i class="fa-solid fa-bookmark"></i>Harry Potter and the Goblet of Fire</h3>
+        <p>Author: J.K. Rowling</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card unavailable">
+        <h3><i class="fa-solid fa-bookmark"></i></i>The Great Gatsby</h3>
+        <p>Author: F. Scott Fitzgerald</p>
+        <p>Category: Classic</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card available">
+        <h3><i class="fa-solid fa-bookmark"></i>1984</h3>
+        <p>Author: George Orwell</p>
+        <p>Category: Dystopian</p>
+        <p>Status: Borrowed</p>
+      </div>
+      <div class="book-card available">
+        <h3><i class="fa-solid fa-bookmark"></i>To Kill a Mockingbird</h3>
+        <p>Author: Harper Lee</p>
+        <p>Category: Classic</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card unavailable">
+        <h3><i class="fa-solid fa-bookmark"></i>The Hobbit</h3>
+        <p>Author: J.R.R. Tolkien</p>
+        <p>Category: Fantasy</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card available">
+        <h3><i class="fa-solid fa-bookmark"></i>The Catcher in the Rye</h3>
+        <p>Author: J.D. Salinger</p>
+        <p>Category: Classic</p>
+        <p>Status: Borrowed</p>
+      </div>
+      <div class="book-card unavailable">
+        <h3><i class="fa-solid fa-bookmark"></i>Brave New World</h3>
+        <p>Author: Aldous Huxley</p>
+        <p>Category: Dystopian</p>
+        <p>Status: Available</p>
+      </div>
+      <div class="book-card available">
+        <h2><i class="fa-solid fa-bookmark"></i>Clean Code</h2>
+        <p><strong>Author:</strong> Robert C. Martin</p>
+        <p><strong>Category:</strong> Programming</p>
+        <p class="status">Status: Available</p>
+      </div>
+
+      <div class="book-card unavailable">
+        <h2><i class="fa-solid fa-bookmark"></i>Atomic Habits</h2>
+        <p><strong>Author:</strong> James Clear</p>
+        <p><strong>Category:</strong> Self-help</p>
+        <p class="status">Status: Borrowed</p>
+      </div>
+    </div>
+
+    
+  </main>
+</body>
+</html>
