@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+</head>
+
+<body>
+    <header>
+        <h2>Log in</h2>
+    </header>
+    <form>
+        <div>
+            <label for="e">Email</label>
+            <input id="e" type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
+        </div>
+        <br />
+        <div>
+            <label for="p">Password</label>
+            <input id="p" type="password" name="Password" required placeholder="Password"
+                autocomplete="current-password">
+        </div>
+        <a href="passwordrecovery.html" title="Forget Password?" target="_blank">Forgot Password?</a>
+        <br /><br />
+
+        <fieldset>
+            <legend>Enter your Role:</legend>
+            <div>
+                <input id="r1" type="radio" name="Role" value="Admin" required>
+                <label for="r1">Admin</label>
+            </div>
+            <div>
+                <input id="r2" type="radio" name="Role" value="User">
+                <label for="r2">User</label>
+            </div>
+        </fieldset>
+
+        <br />
+        <input type="submit" value="Log In">
+        <br /><br />
+
+        <label>Don't have an account?</label>
+        <a href="signup.html" title="Sign Up" target="_blank">Sign Up</a>
+    </form>
+</body>
+
+</html>

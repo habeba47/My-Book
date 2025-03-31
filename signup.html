@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <header>
+        <h2>Sign Up</h2>
+    </header>
+    <form>
+        <div>
+            <label for="n1">First Name</label>
+            <input id="n1" type="text" name="Firstname" required placeholder="First Name">
+        </div>
+        <br />
+        <div>
+            <label for="n2">Last Name</label>
+            <input id="n2" type="text" name="Lastname" required placeholder="Last Name">
+        </div>
+        <br />
+        <div>
+            <label for="p1">Password</label>
+            <!--
+            (?=.*\d)        # Ensure at least one digit (0-9)
+            (?=.*[A-Z])     # Ensure at least one uppercase letter (A-Z)
+            (?=.*[@$!%*?&]) # Ensure at least one special character (@, $, !, %, *, ?, &)
+            [A-Za-z\d@$!%*?&]+ # Allow only letters, numbers, and special characters (no spaces)
+            -->
+            <input id="p1" type="password" name="Password" required placeholder="Password" minlength="7"
+                autocomplete="new-password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]+"
+                title="Must contain at least one uppercase letter, one number, and one special character">
+        </div>
+        <br />
+        <div>
+            <label for="p2">Confirm Password</label>
+            <input id="p2" type="password" name="ConfirmPassword" required placeholder="Confirm Password" minlength="7">
+        </div>
+        <br />
+        <div>
+            <label for="e1">Email</label>
+            <input id="e1" type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
+        </div>
+        <br />
+        <div>
+            <label for="ph">Phone Number</label>
+            <!--ensures only numeric input with exactly 11 digits.-->
+            <input id="ph" type="tel" name="PhoneNumber" required placeholder="Phone Number" pattern="[0-9]{11}"
+                title="Enter a valid 11-digit phone number">
+        </div>
+        <br /><br />
+
+        <fieldset>
+            <legend>Enter your Role:</legend>
+            <div>
+                <input id="r1" type="radio" name="Role" value="Admin" required>
+                <label for="r1">Admin</label>
+            </div>
+            <div>
+                <input id="r2" type="radio" name="Role" value="User">
+                <label for="r2">User</label>
+            </div>
+        </fieldset>
+
+        <br />
+        <input type="submit" value="Sign Up">
+        <br /><br />
+
+        <label>Already have an account?</label>
+        <a href="login.html" title="Log In" target="_blank">Log In</a>
+    </form>
+</body>
+
+</html>
