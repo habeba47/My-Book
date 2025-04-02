@@ -3,28 +3,32 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Login Page</title>
 </head>
 
 <body>
+    <div class="main-content">
     <header>
-        <h2>Log in</h2>
+        <h1>Log in</h1>
     </header>
+    
     <form>
-        <div>
+        <div class="form-group">
             <label for="e">Email</label>
             <input id="e" type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
         </div>
         <br />
-        <div>
+        <div class="form-group">
             <label for="p">Password</label>
             <input id="p" type="password" name="Password" required placeholder="Password"
                 autocomplete="current-password">
         </div>
+        <br/>
         <a href="passwordrecovery.html" title="Forget Password?" target="_blank">Forgot Password?</a>
         <br /><br />
 
-        <fieldset>
+        <fieldset class="input-radio">
             <legend>Enter your Role:</legend>
             <div>
                 <input id="r1" type="radio" name="Role" value="Admin" required>
@@ -43,6 +47,7 @@
         <label>Don't have an account?</label>
         <a href="signup.html" title="Sign Up" target="_blank">Sign Up</a>
     </form>
+</div>
 </body>
 
 </html>

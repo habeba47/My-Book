@@ -1,0 +1,87 @@
+/* 
+Colors Used
+titles: #513F38  // A dark brown
+labels: #3A1F04  // A light dark brown
+background: antiquewhite
+main content: #FAF0E6
+*/
+
+body {
+    background-color: antiquewhite; 
+    text-align: center;
+}
+
+h1 {
+    color: #513F38;
+    /* color: rosybrown; */
+    font-family: 'Arial', sans-serif;
+}
+
+input {
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    width: 50%;
+
+}
+
+label, a, legend {
+    font-family: 'Arial', sans-serif;
+    font-size: medium;
+
+}
+
+label, legend {
+    color: #3A1F04;
+}
+
+a {
+    align-self: right;
+    font-size: 90%;
+    color:#110808;
+
+}
+
+
+fieldset {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+legend {
+    margin-bottom: 5px;
+}
+
+.input-radio input{
+    border-radius: 0px;
+    margin-left: 5%;
+    padding: 0px;
+    width: auto;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 5px;
+}
+
+.form-group label {
+    padding-top: 5px;
+    grid-column: 1;
+}
+
+.main-content{
+    background-color: #FAF0E6; 
+    padding: 20px; 
+    margin-left: 25%; 
+    margin-right: 25%; 
+    margin-top: 5%; 
+    height: 500px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    text-align: left;
+    border-radius: 10px;
+}
