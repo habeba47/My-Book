@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add New Book</title>
+    </head>
+    <body>
+        <div id="addNewBookContainer">
+            <form name="addNewBook">
+                <img src="" alt="" id="newBookCover">
+                <label for="newBookCoverInput">Choose a Photo</label>
+                <input type="file" id="newBookCoverInput" accept="image/jpg, image/jpeg, image/png, image/bmp, image/webp" required>
+
+                <label for="newBookTitle">Title</label>
+                <input type="text" id="newBookTitle" required>
+
+                <label for="newBookAuthor">Author</label>
+                <input type="text" id="newBookAuthor" required>
+
+                <label for="newBookReleaseDate">Relaese Date</label>
+                <input type="date" id="newBookReleaseDate" required>
+
+                <label for="newBookDescription">Description</label>
+                <input type="text" id="newBookDescription" required>
+
+                <label for="newBookCategories">Categories</label>
+                <input type="text" id="newBookCategories" required>
+
+                <div id="categoriesSuggestions"></div>
+                <div id="selectedCategories"></div>
+
+                <button type="submit" id="addNewBookSubmit">Add Book</button>
+
+            </form>
+        </div>
+    </body>
+</html>
