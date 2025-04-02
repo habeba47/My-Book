@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    
     <header>
         <nav>
             <ul>
@@ -18,36 +17,33 @@
                 <li class="signup"><a href="signup.html">Sign up</a></li>
             </ul>
         </nav>
-        
     </header>
     <div class="main-content">
         <h1>Log in</h1>
         <form method="post">
-            <div>
-                <label>Email
-                    <input type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
-                </label>
+            <div class="form-group">
+                <label for="e">Email</label>
+                <input id="e" type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
             </div>
             <br />
-            <div>
-                <label>Password
-                    <input type="password" name="Password" required placeholder="Password" autocomplete="current-password">
-                </label>
+            <div class="form-group">
+                <label for="p">Password</label>
+                <input id="p" type="password" name="Password" required placeholder="Password"
+                    autocomplete="current-password">
             </div>
-            <a href="passwordrecovery.html" title="Forgot Password?" target="_blank">Forgot Password?</a>
+            <br/>
+            <a href="passwordrecovery.html" title="Forget Password?" target="_blank">Forgot Password?</a>
             <br /><br />
 
             <fieldset class="input-radio">
                 <legend>Enter your Role:</legend>
                 <div>
-                    <label>
-                        <input type="radio" name="Role" value="Admin" required> Admin
-                    </label>
+                    <input id="r1" type="radio" name="Role" value="Admin" required>
+                    <label for="r1">Admin</label>
                 </div>
                 <div>
-                    <label>
-                        <input type="radio" name="Role" value="User"> User
-                    </label>
+                    <input id="r2" type="radio" name="Role" value="User">
+                    <label for="r2">User</label>
                 </div>
             </fieldset>
 
