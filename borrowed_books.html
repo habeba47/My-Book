@@ -6,28 +6,28 @@
   <title>Library Search</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="logo.css">
+  <link rel="stylesheet" href="nav_after_login.css">
   
 </head>
 <body>
-  <div class="logo-circle">
-    <svg viewBox="0 0 24 24">
-      <path d="M21 4H7C5.9 4 5 4.9 5 6v12c0 1.1.9 2 2 2h14v-2H7V6h14V4zm-2 4H9v2h10V8zm0 4H9v2h10v-2z"/>
-    </svg>
-    <span><i class="fa-solid fa-book-open-reader"></i>Library</span>
-  </div>
-  <nav>
-    <ul>
-        <li class="Onlinelibrary"><b>Online library</b></li>
-        <li class="search">
-            <input type="search" name="Search" placeholder="Search by Inspiration">
-            <i class="fas fa-search"></i>
-        </li>
-        <li class="available_books"><a href="available_books.html">Available books</a></li>
-        <li class="add_book"><a href="add_book.html">Add book &plus;</a></li>
-        <li class="borrowed_book"><a href="borrowed_books.html">Borrowed book</a></li>
-        <li class="logout"><a href="Home.html">Log out</a></li>
-    </ul>
-</nav>
+  <header>
+    <nav>
+        <div class="logo-circle">
+            <svg viewBox="0 0 24 24">
+                <path d="M21 4H7C5.9 4 5 4.9 5 6v12c0 1.1.9 2 2 2h14v-2H7V6h14V4zm-2 4H9v2h10V8zm0 4H9v2h10v-2z"/>
+            </svg>
+            <span>Library</span>
+        </div>
+        <b class="onlinelibrary" style="color: #513F38;">Online library</b>
+        <ul>
+            <li class="add_book"><a href="add_book.html">Add book &plus;</a></li>
+            <li class="available_books"><a href="available_books.html">Available books</a></li>
+            <li class="borrowed_book"><a href="borrowed_books.html" style="color: #dac2a6;">Borrowed book</a></li>
+            <li class="logout"><a href="Home.html">Log out</a></li>
+        </ul>
+    </nav>
+</header>
 
   <main>
     <section class="search-section">
