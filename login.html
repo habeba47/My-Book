@@ -10,33 +10,42 @@
 <body>
     <div class="main-content">
     <header>
-        <h1>Log in</h1>
+        <nav>
+            <ul>
+                <li class="Onlinelibrary"><b>Online library</b></li>
+                <li class="home"><a href="Home.html">Home</a></li>
+                <li class="login"><a href="login.html">Log in</a></li>
+                <li class="signup"><a href="signup.html">Sign up</a></li>
+            </ul>
+        </nav>
+        <h2>Log in</h2>
     </header>
-    
-    <form>
-        <div class="form-group">
-            <label for="e">Email</label>
-            <input id="e" type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
+    <form method="post">
+        <div>
+            <label>Email
+                <input type="email" name="Email" required placeholder="Enter your e-mail" autocomplete="email">
+            </label>
         </div>
         <br />
-        <div class="form-group">
-            <label for="p">Password</label>
-            <input id="p" type="password" name="Password" required placeholder="Password"
-                autocomplete="current-password">
+        <div>
+            <label>Password
+                <input type="password" name="Password" required placeholder="Password" autocomplete="current-password">
+            </label>
         </div>
-        <br/>
-        <a href="passwordrecovery.html" title="Forget Password?" target="_blank">Forgot Password?</a>
+        <a href="passwordrecovery.html" title="Forgot Password?" target="_blank">Forgot Password?</a>
         <br /><br />
 
         <fieldset class="input-radio">
             <legend>Enter your Role:</legend>
             <div>
-                <input id="r1" type="radio" name="Role" value="Admin" required>
-                <label for="r1">Admin</label>
+                <label>
+                    <input type="radio" name="Role" value="Admin" required> Admin
+                </label>
             </div>
             <div>
-                <input id="r2" type="radio" name="Role" value="User">
-                <label for="r2">User</label>
+                <label>
+                    <input type="radio" name="Role" value="User"> User
+                </label>
             </div>
         </fieldset>
 
