@@ -7,7 +7,7 @@ main content: #FAF0E6
 */
 
 body {
-    background-color: antiquewhite; 
+    background-color: sand; 
     text-align: center;
     padding-top: 60px;
 }
@@ -97,10 +97,11 @@ legend {
 .form-group{
     display: grid;
     margin-left: 0 auto;
-    width: 100%;
+    width: auto;
     height: 50%;
     grid-template-columns: 1fr 6fr;
     gap: 6px;
+    column-gap: -10px;
 }
 
 .form-group label {
