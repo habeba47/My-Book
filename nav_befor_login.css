@@ -1,7 +1,9 @@
 nav {
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 nav ul {
