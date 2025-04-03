@@ -23,7 +23,7 @@
     display: flex;
     width: 65%;
     height: 500px;
-    background-color: #FAF0E6;
+    background-color: ivory;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     overflow: hidden;
@@ -141,6 +141,7 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     font-size: 1em;
     margin-bottom: 15px;
+    background-color: ivory;
 }
 
 button {
@@ -178,7 +179,7 @@ button:hover {
     width: 75%;
     max-width: 320px;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.95);
+    background: ivory;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     text-align: center;
@@ -272,7 +273,7 @@ button:hover {
 /* Inner circle (when selected) */
 .radio-option input[type="radio"]:checked~.radio-checkmark {
     border-color: #513F38;
-    background-color: #FAF0E6;
+    background-color: ivory;
 }
 
 .radio-option input[type="radio"]:checked~.radio-checkmark::after {
@@ -344,7 +345,7 @@ a:hover {
 .signup-card-form {
     width: 55%;
     padding: 25px;
-    background: #FAF0E6;
+    background: ivory;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -382,7 +383,7 @@ a:hover {
     border: none;
     border-radius: 6px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    background: #FFF9F0;
+    background: ivory;
     font-size: 0.9rem;
 }
 
@@ -393,7 +394,7 @@ a:hover {
     margin: 12px 0;
     border: none;
     border-radius: 6px;
-    background-color: #5C3D2E;
+    background-color: #3A1F04;
     color: white;
     font-weight: bold;
     font-size: 0.95rem;
