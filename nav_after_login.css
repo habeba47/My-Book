@@ -1,7 +1,15 @@
 nav {
     display: flex;
     align-items: center;
-    margin: 0 10px;
+    top: 0px;
+    right: 0px;
+    background-color: #513F38;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 60px;
+
 }
 
 nav ul {

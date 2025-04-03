@@ -29,12 +29,13 @@
     </nav>
 </header>
 
-  <main class="flex-container">
+  <main class="parent_container">
     <h1>Search for Books</h1>
     <section >
         <h2>Search the Library</h2>
     
-        <form class="form-group" method="GET" action="search_results.html">
+        <form method="GET" action="search_results.html">
+          <div class="form-group" id="search_form">
             <label for="title">Title:</label>
             <input id="title" name="title" type="text" placeholder="Enter book title" />
           
@@ -43,9 +44,9 @@
           
             <label for="category">Category:</label>
             <input id="category" name="category" type="text" placeholder="Enter book category" />
-          
-            <button type="submit" aria-label="Search books"><i class="fa fa-search"></i> Search</button>
-          </form>
+          </div>
+          <button class="buttons" type="submit" aria-label="Search books"><i class="fa fa-search"></i> Search</button>
+        </form>
     
         <p class="search-label"><em>Showing results for: "Harry"</em></p><!--for JS-->
       </section>
