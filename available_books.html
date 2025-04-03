@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="logo.css">
     <link rel="stylesheet" href="nav_after_login.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>Available Books</title>
     <link rel="stylesheet" href="styles.css" />
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="logo.css" />
 </head>
 
-<body>
+<body id="availableBooks">
     <header>
         <nav>
             <div class="logo-circle">
@@ -33,64 +34,73 @@
         </nav>
     </header>
 
-
+    <h2 id="availableBooksHeader">Available Books</h2>
+    
     <div id="availableBooksContainer">
+        
         <!-- These are hard coded examples -->
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 1.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Philosopher's Stone</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">1997</p>
-            <a href="book_details_user_1.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_1.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 1.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Philosopher's Stone</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  1997</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 2.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Chamber of Secrets</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">1998</p>
-            <a href="book_details_user_2.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_2.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 2.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Chamber of Secrets</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  1998</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 3.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Prisoner of Azkaban</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">1999</p>
-            <a href="book_details_user_3.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_3.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 3.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Prisoner of Azkaban</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  • 1999</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 4.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Goblet of Fire</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">2000</p>
-            <a href="book_details_user_4.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_4.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 4.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Goblet of Fire</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  2000</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 5.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Order of the Phoenix</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">2003</p>
-            <a href="book_details_user_5.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_5.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 5.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Order of the Phoenix</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  2003</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 6.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Half-Blood Prince</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">2005</p>
-            <a href="book_details_user_6.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_6.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 6.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Half-Blood Prince</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  2005</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
-        <div class="bookCard">
-            <img src="Books' covers/harry potter 7.jpg" alt="Book Cover">
-            <p class="availableBookTitle">Harry Potter and the Deathly Hallows</p>
-            <p class="availableBookAuthor">J. K. Rowling</p>
-            <p class="availableBookDate">2007</p>
-            <a href="book_details_user_7.html"><button>Show Details</button></a>
-        </div>
+        <a class="bookCard" href="book_details_user_7.html">
+            <div class="bookCard">
+                <img src="Books' covers/harry potter 7.jpg" alt="Book Cover" class="avialableBookCover">
+                <p class="availableBookTitle">Harry Potter and the Deathly Hallows</p>
+                <p class="availableBookAuthor_Date">J. K. Rowling  •  2007</p>
+                <p class="availableBookCategory">Fantasy • Coming-of-age fiction</p>
+            </div>
+        </a>
 
     </div>
 </body>
