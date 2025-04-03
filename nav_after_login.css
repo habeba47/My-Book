@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.onlinelibrary {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+nav ul li {
+    padding-left: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #513F38 ;
+    width: 115px;
+    height: 40px;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+}
+
+a:hover {
+    color: #dac2a6;
+}
