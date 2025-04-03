@@ -321,7 +321,7 @@ a:hover {
 
 .signup-container {
     width: 65%;
-    height: 550px;
+    height: 600px;
     /* Increased height by 50px */
     background-color: #FAF0E6;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -358,7 +358,7 @@ a:hover {
 }
 
 .signup-card h2 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: -360px;
     margin-bottom: 5px;
     font-size: 1.8rem;

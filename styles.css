@@ -15,6 +15,7 @@ h1, h2 {
     color: #513F38;
     /* color: rosybrown; */
     font-family: 'Arial', sans-serif;
+    display: block;
 }
 
 
@@ -54,6 +55,11 @@ legend {
     margin-bottom: 5px;
 }
 
+/* Container for body */
+.flex-container {
+    display: flex;
+}
+
 .note {
     margin-left: 40%;
     font-size: small;
@@ -84,6 +90,7 @@ legend {
 
 .form-group{
     display: grid;
+    flex-grow: 1;
     grid-template-columns: 1fr 6fr;
     gap: 5px;
 }
