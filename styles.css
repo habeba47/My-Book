@@ -38,7 +38,6 @@ label, legend {
 }
 
 a {
-    align-self: right;
     font-size: 90%;
     color:#110808;
 
@@ -55,12 +54,24 @@ legend {
     margin-bottom: 5px;
 }
 
+.note {
+    margin-left: 40%;
+    font-size: small;
+}
+
 .buttons {
+    display: block;
     width: 20%;
+    height: 12%;
     background-color: #513F38;
     color: #FAF0E6;
     font-family: Arial, sans-serif;
-    align-self: center;
+    font-size: medium;
+    margin: auto;
+}
+
+.buttons:hover, a:hover {
+    color: #DABC80;
 }
 
 .input-radio input{
@@ -84,7 +95,8 @@ legend {
 
 .main-content{
     background-color: #FAF0E6; 
-    padding: 20px; 
+    padding: 3%; 
+    padding-left: 5%;
     margin-left: 25%; 
     margin-right: 25%; 
     margin-top: 5%; 
