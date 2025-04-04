@@ -29,46 +29,59 @@
             </nav>
         </header>
 
-        <h2 id="addNewBookHeader">Add Book</h2>
+        <h2 class="availableBooksHeader">Add Book</h2>
 
-        <div>
-            
-            <div id="addNewBookFormContainer">
-    
-                <form name="addNewBook">
+        <div class="addBookContainer"> 
+            <div class="addBookFormContainer">
+                <form name="addBook">
 
                     <div class="formContent">
-                        <div class="newBookDisplayCover">
+
+                        <div class="addBookDisplayCover">
                             <img src="Books' covers/harry potter 1.jpg" alt="" id="newBookCover">
                         </div>
 
-                        <div class="addNewBookDetails">
-                            <label for="newBookTitle" class="addBookInputLabel">Title</label>
-                            <input type="text" id="newBookTitle" class="addBookInput" required>
+                        <div class="addBookDetails">
+                            
+                            <div class="addBookBlurredBackground"> 
+                                <img src="Books' covers/harry potter 1.jpg" alt=""> 
+                            </div>
+                            
+                            <div class="addBookInputs">
+                            <label for="addBookTitle" class="addBookInputLabel">Title</label>
+                            <input type="text" id="addBookTitle" class="addBookInput" required>
 
-                            <label for="newBookAuthor" class="addBookInputLabel">Author</label>
-                            <input type="text" id="newBookAuthor" class="addBookInput" required>
+                            <label for="addBookAuthor" class="addBookInputLabel">Author</label>
+                            <input type="text" id="addBookAuthor" class="addBookInput" required>
 
-                            <label for="newBookReleaseDate" class="addBookInputLabel">Relaese date</label>
-                            <input type="date" id="newBookReleaseDate" class="addBookInput"required>
+                            <label for="addBookReleaseDate" class="addBookInputLabel">Relaese date</label>
+                            <input type="date" id="addBookReleaseDate" class="addBookInput"required>
 
-                            <label for="newBookDescription" class="addBookInputLabel">Description</label>
-                            <input type="text" id="newBookDescription" class="addBookInput" required>
+                            <label for="addBookDescription" class="addBookInputLabel">Description</label>
+                            <input type="text" id="addBookDescription" class="addBookInput" required>
 
-                            <label for="newBookCategories" class="addBookInputLabel">Categories</label>
-                            <input type="text" id="newBookCategories" class="addBookInput" required>
+                            <label for="addBookCategories" class="addBookInputLabel">Categories</label>
+                            <input type="text" id="addBookCategories" class="addBookInput" required>
 
-                            <label for="newBookPages" class="addBookInputLabel">No. of pages</label>
-                            <input type="number" min="0" id="newBookPages" class="addBookInput" required>
+                            <label for="addBookPages" class="addBookInputLabel">No. of pages</label>
+                            <input type="number" min="0" id="addBookPages" class="addBookInput" required>
 
                             <div id="categoriesSuggestions" class="addBookInputLabel"></div>
                             <div id="selectedCategories"></div>
 
-                            <label for="newBookCoverInput" >Choose a Photo</label>
-                            <input type="file" id="newBookCoverInput" accept="image/jpg, image/jpeg, image/png, image/bmp, image/webp" required>
-
-                            <button type="submit" id="addNewBookSubmit">Add Book</button>
+                            <button type="submit" id="addBookSubmit">Add Book</button>
+                            </div>
                         </div>
+                        
+                        <div class="addBookCover">
+                            <label for="addBookCoverInput" id="addBookCoverLabel" >Choose a Photo</label>
+                            <input type="file" id="addBookCoverInput" accept="image/jpg, image/jpeg, image/png, image/bmp, image/webp" required>
+                        </div>
+
+                        <!-- <div class="addBookButton">
+                            <button type="submit" id="addBookSubmit">Add Book</button>
+                        </div> -->
+
                     </div>
                 </form>
             </div>
