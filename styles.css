@@ -6,19 +6,27 @@ background: antiquewhite
 main content: #FAF0E6
 */
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: ivory; 
     text-align: center;
-    padding-top: 60px;
+    padding-top: 52px;
+    min-height: 100vh;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #513F38;
     /* color: rosybrown; */
     font-family: 'Arial', sans-serif;
     display: block;
 }
 
+h3 {
+    font-size: medium;
+}
 
 input {
     border-radius: 15px;
@@ -56,9 +64,19 @@ legend {
     margin-bottom: 5px;
 }
 
+footer {
+    background-color: #513F38;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: large;
+    padding: 20px 0;
+    width: 100%;
+}
+
 /* Container for body */
 .parent_container {
     display: flex;
+    flex: 1;
     flex-direction: column;
     height: 100%;
     width: 100vw;
@@ -114,13 +132,13 @@ legend {
     font-size: medium;
 }
 .main-content{
-    background-color: #FAF0E6; 
+    background-color: sand; 
     padding: 3%; 
     padding-left: 5%;
     margin-left: 25%; 
     margin-right: 25%; 
     margin-top: 5%; 
-    height: 500px;
+    height: 400px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
     text-align: left;
     border-radius: 10px;
@@ -247,4 +265,44 @@ legend {
 /*---------------------------ِSearch CSS-------------------------------*/
 #search_form {
     margin-left: 20%;
+}
+
+/*----------------------------Borrowed CSS-------------------------------*/
+.borrowed {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    font-style: italic;
+    align-self: flex-start;
+    margin-left: 3%;
+    color: #3A1F04;
+}
+
+
+/*----------------------------Reset Password CSS-------------------------------*/
+#reset_password_button {
+    width: 40%;
+    margin-left: 30%;
+}
+
+.mainimg {
+    height: auto;
+    width: 100vw;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    align-self: flex-start;
+}
+
+.image-text {
+    position: absolute;
+
+    color: #FFE8B3;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5em;
+    font-weight: 90;
+    background-color: transparent;
+    transform: translate(-60px, -20px);
+    top: 25%;
+    left: 50%;
 }
