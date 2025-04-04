@@ -284,6 +284,8 @@ footer {
     margin-left: 30%;
 }
 
+
+/*----------------------------HomePage CSS-------------------------------*/
 .mainimg {
     height: auto;
     width: 100vw;
@@ -291,18 +293,47 @@ footer {
     display: block;
     position: relative;
     align-self: flex-start;
+    margin-left: -10px;
 }
 
 .image-text {
     position: absolute;
-
-    color: #FFE8B3;
+    text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #e3bc6c;
     font-style: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5em;
-    font-weight: 90;
+    font-weight: 400;
     background-color: transparent;
     transform: translate(-60px, -20px);
-    top: 25%;
-    left: 50%;
+    top: 30%;
+    left: 60%;
+}
+
+.OnlyBookCover {
+    width: 100%;
+    height: 100%;
+}
+
+.home_subheading {
+    margin-left: -78%;
+}
+
+#vision {
+    margin-left: -80%;
+}
+
+.hometext {
+    margin-left: 1%;
+    text-align: justify;
+    color: black;
+    width: 100%;
+    font-size: large;
+}
+
+.textcontainer{
+    display: block;
+    text-align: justify;
+    width: 60%;
+    margin-left: 4%;
 }
