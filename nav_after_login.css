@@ -34,11 +34,12 @@ nav ul li a {
     text-decoration: none;
     color: white;
     background-color: #513F38 ;
-    width: 115px;
+    width: auto;
     height: 40px;
     border-radius: 30px;
-    text-align: center;
+    text-align:ccenter;
     align-content: center;
+    padding-right: 25px;
 }
 
 a:hover {
