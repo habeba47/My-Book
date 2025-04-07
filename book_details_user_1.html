@@ -21,34 +21,40 @@
                 <span>Library</span>
             </div>
             <b class="onlinelibrary" style="color: #513F38;">Online library</b> -->
-            <img src="inkwood.png">
+            <img src="inkwood.png" class="logo-img">
             <ul>
                 <li class="add_book"><a href="add_book.html">&plus;Add book</a></li>
                 <li class="available_books"><a href="available_books.html" style="color: #dac2a6;">Available books</a>
                 </li>
-                <li class="borrowed_book"><a href="borrowed_books.html">Borrowed book</a></li>
+                <li class="borrowed_book"><a href="borrowed_books.html">Borrowed books</a></li>
                 <li class="search"><a href="search.html">Search</a></li>
                 <li class="logout"><a href="Home.html">Log out</a></li>
             </ul>
         </nav>
     </header>
     <h1>Book Details</h1>
-    <section>
-        <div class="info">
-            <h3 class="BookTitle">Harry Potter and the Philosopher's Stone</h3>
-            <div class="DisplayBookCover">
-                <img src="Books' covers/harry potter 1.jpg" alt="" id="newBookCover">
+    <section class="bookcontent-container">
+        
+        <h2 class="book-title">Harry Potter and the Philosopher's Stone</h2>
+        <div class="bookCard-row">
+            <div class="bookContainer-detailspage">
+                <div class="bookCard">
+                    <img src="Books' covers/harry potter 1.jpg" alt="Book Cover" class="OnlyBookCover">
+                </div>
             </div>
-            <p class="BookAuthor"> <strong>Author:</strong> J. K. Rowling</p>
-            <p class="BookDate"><strong>Published:</strong> 1997</p>
-            <p class="BookPages"><strong>Pages:</strong> 223</p>
-            <p class="Description"><strong>Description:</strong>The first novel in the Harry Potter series follows
-                Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday. He attends
-                Hogwarts School of Witchcraft and Wizardry to learn magic under the guidance of the kindly headmaster
-                Albus Dumbledore.Harry makes his first friends, Ron Weasley and Hermione Granger, and
-                together they uncover the mystery of the Philosopher's Stone.
-            </p>
-            <a href="available_books.html" class="back-button">Back to All Books</a>
+            <div class="bookDescription-container">
+                <p class="textcontainer"> <strong>Author:</strong> J. K. Rowling</p>
+                <p class="textcontainer"><strong>Published:</strong> 1997</p>
+                <p class="textcontainer"><strong>Pages:</strong> 223</p>
+                <p class="textcontainer"><strong>Description:</strong>The first novel in the Harry Potter series follows
+                    Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday. He attends
+                    Hogwarts School of Witchcraft and Wizardry to learn magic under the guidance of the kindly headmaster
+                    Albus Dumbledore.Harry makes his first friends, Ron Weasley and Hermione Granger, and
+                    together they uncover the mystery of the Philosopher's Stone.
+                </p>
+            </div>
+            
         </div>
+        <input type="button" class ="buttons detailsbutton" value="Borrow">
     </section>
 </body>

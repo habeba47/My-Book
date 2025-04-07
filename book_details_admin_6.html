@@ -14,72 +14,59 @@
 <body>
     <header>
         <nav>
-            <!-- <div class="logo-circle">
-                <svg viewBox="0 0 24 24">
-                    <path d="M21 4H7C5.9 4 5 4.9 5 6v12c0 1.1.9 2 2 2h14v-2H7V6h14V4zm-2 4H9v2h10V8zm0 4H9v2h10v-2z"/>
-                </svg>
-                <span>Library</span>
-            </div>
-            <b class="onlinelibrary" style="color: #513F38;">Online library</b> -->
-            <img src="inkwood.png">
+            <img src="inkwood.png" class="logo-img">
             <ul>
                 <li class="add_book"><a href="add_book.html">&plus;Add book</a></li>
-                <li class="available_books"><a href="available_books.html" style="color: #dac2a6;">Available books</a>
-                </li>
+                <li class="available_books"><a href="available_books.html" style="color: #dac2a6;">Available books</a></li>
                 <li class="borrowed_book"><a href="borrowed_books.html">Borrowed book</a></li>
                 <li class="search"><a href="search.html">Search</a></li>
                 <li class="logout"><a href="Home.html">Log out</a></li>
             </ul>
         </nav>
     </header>
+
     <h1>Book Details</h1>
-    <section>
-        <div class="edit_details">
-            <form class="edit_form" method="get">
-                <div class="title">
-                    <label for="title">Title:</label>
-                    <input id="title" name="title" type="text" placeholder="Enter book title"
-                        value="Harry Potter and the Half-Blood Prince" required />
-                </div>
-                <br>
 
-                <div class="author">
-                    <label for="author">Author:</label>
-                    <input id="author" name="author" type="text" placeholder="Author" value="J. K. Rowling" required />
-                </div>
-                <br>
+    <section class="bookcontent-container">
+        <div>
+            <form method="get">
+                <div class="bookCard-row">
+                    <div class="bookContainer-detailspage">
+                        <label for="changeBookCoverInput" id="addBookCoverLabel">
+                            <div class="bookCard">
+                                <img src="Books' covers/harry potter 6.jpg" alt="" id="newBookCover" class="OnlyBookCover">
+                            </div>
+                        </label>
+                        <input type="file" id="changeBookCoverInput"
+                            accept="image/jpg, image/jpeg, image/png, image/bmp, image/webp">
+                    </div>
 
-                <div class="date">
-                    <label for="date">Published:</label>
-                    <input id="date" name="date" type="text" placeholder="Date" value="2005" required />
-                </div>
-                <br>
+                    <div class="form-group" id="details-form">
+                        <label for="title">Title:</label>
+                        <input id="title" name="title" type="text" placeholder="Enter book title"
+                            value="Harry Potter and the Half-Blood Prince" required />
+                        <br>
 
-                <div class="pages">
-                    <label for="pages">Pages:</label>
-                    <input id="pages" name="pages" type="text" placeholder="Pages" value="607" required />
-                </div>
-                <br>
+                        <label for="author">Author:</label>
+                        <input id="author" name="author" type="text" placeholder="Author" value="J. K. Rowling" required />
+                        <br>
 
-                <div class="desc">
-                    <label for="desc">Description:</label>
-                    <textarea id="desc" name="desc" cols="30" rows="10"
-                        aria-required="true">During Harry's sixth year, Dumbledore gives him private lessons to learn about Voldemort's past through memories. Meanwhile, Harry discovers an old potions textbook belonging to the mysterious "Half-Blood Prince," and Draco Malfoy is acting suspiciously.The book reveals how Voldemort created his Horcruxes to achieve immortality.</textarea>
-                </div>
+                        <label for="date">Published:</label>
+                        <input id="date" name="date" type="text" placeholder="Date" value="2005" required />
+                        <br>
 
-                <div class="DisplayBookCover">
-                    <img src="Books' covers/harry potter 6.jpg" alt="" id="newBookCover">
-                </div>
+                        <label for="pages">Pages:</label>
+                        <input id="pages" name="pages" type="text" placeholder="Pages" value="607" required />
+                        <br>
 
-                <div class="changeBookCover">
-                    <label for="changeBookCoverInput" id="addBookCoverLabel">Choose a Photo</label>
-                    <input type="file" id="changeBookCoverInput"
-                        accept="image/jpg, image/jpeg, image/png, image/bmp, image/webp">
+                        <label for="desc">Description:</label>
+                        <textarea id="desc" name="desc" cols="30" rows="10"
+                            aria-required="true">During Harry's sixth year, Dumbledore gives him private lessons to learn about Voldemort's past through memories. Meanwhile, Harry discovers an old potions textbook belonging to the mysterious "Half-Blood Prince," and Draco Malfoy is acting suspiciously. The book reveals how Voldemort created his Horcruxes to achieve immortality.</textarea>
+                    </div>
                 </div>
-                <button type="submit">Update</button>
+                <button class="buttons detailsbutton" type="submit">Update</button>
             </form>
-            <a href="available_books.html" class="back-button">Back to All Books</a>
         </div>
-
     </section>
 </body>
+</html>

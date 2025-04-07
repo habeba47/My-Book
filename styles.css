@@ -28,7 +28,16 @@ h3 {
     font-size: medium;
 }
 
-input {
+p {
+    font-family: 'Arial', sans-serif;
+}
+
+
+strong {
+    color:#3A1F04;
+}
+
+input, textarea {
     border-radius: 15px;
     padding: 5px;
     padding-left: 10px;
@@ -36,6 +45,10 @@ input {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     width: 50%;
 
+}
+
+textarea {
+    width: 70%;
 }
 
 label, a, legend {
@@ -82,6 +95,12 @@ footer {
     width: 100vw;
 }
 
+.logo-img {
+    margin-left: -2%;
+    margin-right: 0%;
+    height: 550%;
+    width: auto;
+}
 .note {
     margin-left: 40%;
     font-size: small;
@@ -89,6 +108,9 @@ footer {
 
 .buttons {
     display: block;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.5%;
     width: 10%;
     height: 45px;
     background-color: #513F38;
@@ -389,4 +411,59 @@ footer {
     text-align: justify;
     width: 60%;
     margin-left: 4%;
+}
+
+/*----------------------------Book Details CSS-------------------------------*/
+.book-title {
+    text-align: left;
+    color: #513F38;
+    font-family: 'Arial', sans-serif;
+    display: block;
+}
+
+.bookcontent-container{
+    background-color: sand; 
+    padding: 3%; 
+    padding-left: 5%;
+    margin-left: 5%; 
+    margin-right: 25%; 
+    margin-top: 5%; 
+    height: 700px;
+    width: 80%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); 
+    text-align: left;
+    border-radius: 10px;
+}
+
+.bookContainer-detailspage {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 40px 90px 40px;
+}
+
+.bookCard-row {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.bookDescription-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.detailsbutton {
+    margin-top: -7%;
+    padding-left: -1%;
+}
+
+#changeBookCoverInput {
+    display: none;
+}
+
+#details-form {
+    width: 60%;
 }
