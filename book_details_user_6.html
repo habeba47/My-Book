@@ -14,14 +14,7 @@
 <body>
     <header>
         <nav>
-            <!-- <div class="logo-circle">
-                <svg viewBox="0 0 24 24">
-                    <path d="M21 4H7C5.9 4 5 4.9 5 6v12c0 1.1.9 2 2 2h14v-2H7V6h14V4zm-2 4H9v2h10V8zm0 4H9v2h10v-2z"/>
-                </svg>
-                <span>Library</span>
-            </div>
-            <b class="onlinelibrary" style="color: #513F38;">Online library</b> -->
-            <img src="inkwood.png">
+            <img src="inkwood.png" class="logo-img">
             <ul>
                 <li class="add_book"><a href="add_book.html">&plus;Add book</a></li>
                 <li class="available_books"><a href="available_books.html" style="color: #dac2a6;">Available books</a>
@@ -32,21 +25,28 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="info">
-            <h3 class="BookTitle">Harry Potter and the Half-Blood Prince</h3>
-            <div class="DisplayBookCover">
-                <img src="Books' covers/harry potter 6.jpg" alt="" id="newBookCover">
+    <h1>Book Details</h1>
+    <section class="bookcontent-container">
+        
+        <h2 class="book-title">Harry Potter and the Half-Blood Prince</h2>
+        <div class="bookCard-row">
+            <div class="bookContainer-detailspage">
+                <div class="bookCard">
+                    <img src="Books' covers/harry potter 6.jpg" alt="Book Cover" class="OnlyBookCover">
+                </div>
             </div>
-            <p class="BookAuthor"> <strong>Author:</strong> J. K. Rowling</p>
-            <p class="BookDate"><strong>Published:</strong> 2005</p>
-            <p class="BookPages"><strong>Pages:</strong> 607</p>
-            <p class="Description"><strong>Description:</strong>During Harry's sixth year, Dumbledore gives him private
-                lessons to learn about Voldemort's past through memories. Meanwhile, Harry discovers an old potions
-                textbook belonging to the mysterious "Half-Blood Prince," and Draco Malfoy is acting suspiciously.The
-                book reveals how Voldemort created his Horcruxes to achieve immortality.
-            </p>
-            <a href="available_books.html" class="back-button">Back to All Books</a>
+            <div class="bookDescription-container">
+                <p class="textcontainer"> <strong>Author:</strong> J. K. Rowling</p>
+                <p class="textcontainer"><strong>Published:</strong> 2005</p>
+                <p class="textcontainer"><strong>Pages:</strong> 607</p>
+                <p class="textcontainer"><strong>Description:</strong>During Harry's sixth year, Dumbledore gives him private
+                    lessons to learn about Voldemort's past through memories. Meanwhile, Harry discovers an old potions
+                    textbook belonging to the mysterious "Half-Blood Prince," and Draco Malfoy is acting suspiciously.The
+                    book reveals how Voldemort created his Horcruxes to achieve immortality.
+                </p>
+            </div>
+            
         </div>
+        <input type="button" class ="buttons detailsbutton" value="Borrow">
     </section>
 </body>
