@@ -168,13 +168,13 @@ footer {
     flex-direction: column;
 }
 
-/*------------------------Available Books CSS--------------------------------*/
+/*------------------General styling for books' cards-------------------*/
 
-.availableBooksHeader {
+.availableBooksHeader, .addBookHeader {
     margin: 45px 0 0 40px;
     text-align: left;
     font-family: 'Arial', sans-serif;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
     color: #3A1F04;
 
@@ -186,7 +186,6 @@ footer {
     margin: 20px 40px 90px 40px;
 }
 
-/*book card inside available books*/
 .bookCard {
     width: 250px;
     height: 430px;
@@ -205,10 +204,12 @@ footer {
     transform: scale(1.02);
 }
 
-/* adjust to 100% for image only*/
-.avialableBookCover {
+.bookCover {
+    display: flex;
+    position: relative;
     width: 100%;
     height: 70%;
+    overflow: hidden; 
 }
 
 .bookTitle {
@@ -228,58 +229,93 @@ footer {
     font-size: 13px;
 }
 
-.availableBookCategory {
-    font-weight: 500;
+
+/*------------------------Available Books CSS--------------------------------*/
+
+.availableBookCover {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden; 
+}
+
+.availableBookStatus:not(:empty) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    background-color: black;
+    color: #ffffff;
+    width: 90px;
+    height: 25px;
+    margin: 10px 0 0 150px;
+    font-size: 17px;
+    border-radius: 15px;
+    z-index: 2;
+
+}
+
+.availableBookimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
 }
 
 /*---------------------------ِAdd New Book CSS-------------------------------*/
 
-.addBookContainer {
-    width: 100%;
+.addBookRule {
+    background-color: #3A1F04;
+    height: 0.5px;
+    margin: 8px 0 80px 35px;
 }
 
 .addBookFormContainer {
     overflow: hidden;
-    height: 1000px;
-    margin: 10px;
-    width: 100%;
+    height: 550px;
+    margin: 15px 0 150px 70px;
+    width: 70%;
+    border-radius: 13px;
+    box-shadow: 0 0 15px #513F38;
 }
 
 .formContent {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-wrap: wrap;
     width: 100%;
+    height: 100%;
 }
 
 .addBookDisplayCover {
     width: 35%;
-    height: 650px;
+    height: 100%;
 }
 
 .addBookDisplayCover img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 .addBookDetails {
     position: relative;
     width: 65%;
-    height: 650px;
+    height: 100%;
 }
 
 .addBookBlurredBackground {
     position: absolute;
     width: 100%;
-    height: 650px;
+    height: 100%;
     overflow: hidden;
 }
 
 .addBookBlurredBackground img {
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
     filter: blur(6px);
     object-fit: cover;
     z-index: 1;
@@ -292,11 +328,13 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    margin: 20px 0 10px 25px;
+    margin: 40px 0 10px 70px;
+    flex-wrap: wrap;
 }
 
 .addBookInputLabel {
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .addBookInput {
@@ -304,36 +342,44 @@ footer {
     border-radius: 8px;
     font-size: 20px;
     font-family: Arial, sans-serif;
-    width: 600px;
-    height: 35px;
+    width: 60%;
+    height: 25px;
     opacity: 0.8;
     background-color: #fdfaf8;
 }
 
-.addBookCover {
-    width: 100%;
-}
-
 #addBookCoverInput {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
 }
 
-.addBookCover {
-    text-align: left;
-    margin: 20px 0 0 180px;
+.addBookButtons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
-#addBookSubmit {
-    background-color: #3A1F04;
-    color: #FAF0E6;
+#addBookCoverLabel, #addBookSubmit {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #513F38;
+    color: #fdfaf8;
     border: none;
     border-radius: 10px;
+    font-size: 18px;
     width: 150px;
-    height: 40px;
-    margin: 10px 0 40px 20px;
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    font-weight: 600;
+    height: 30px;
+    margin: 10px 20px 0 0;
+    transition: all 0.3s ease;
+}
+
+#addBookCoverLabel:hover, #addBookSubmit:hover {
+    transform: scale(1.1);
 }
 
 /*---------------------------ِSearch CSS-------------------------------*/
